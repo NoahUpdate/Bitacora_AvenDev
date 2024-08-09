@@ -9,6 +9,53 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  height: 160px;
+  align-items: center;
+  border-bottom: 5px solid #005a84;
+  border-top: 5px solid #005a84;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  width: 25%; /* Ajusta el ancho del contenedor */
+  max-width: 600px; /* Ajusta el ancho máximo del contenedor */
+  overflow: hidden; /* Oculta el desbordamiento de la imagen */
+  text-align: center;
+}
+
+.logo_container img {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+nav {
+  width: 100%;
+  font-family: "Hammersmith One";
+  font-weight: 500;
+  font-size: 35px;
+  padding: 0 60px;
+}
+
+.nav_list {
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #005a84;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #c1dfed;
+}
+
 body {
   background-color: #649ab4;
   display: flex;
@@ -26,7 +73,7 @@ body {
   align-self: center;
   gap: 10px;
   background-color: #c1dfed;
-  width: 100vh;
+  width: 120vh;
   height: auto;
   border: 1.5px solid beige;
   border-bottom: 0px;
@@ -38,12 +85,8 @@ body {
   font-size: 18px;
   width: 80%;
   text-align: justify;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #a5cfe1;
-}
-
-head {
-  background-size: auto;
 }
 
 h1,
@@ -60,6 +103,7 @@ footer {
   font-family: "Hammersmith One";
   text-align: center;
   border-top: 1.5px solid beige;
+  border-radius: 5px;
 }
 
 ul {
